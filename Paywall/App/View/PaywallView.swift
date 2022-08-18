@@ -16,9 +16,10 @@ class PaywallView : UIView {
   lazy var splashImage = UIImageView()
   lazy var vStack = UIStackView()
   var stackedViews: [UIView?] = []
+  var paywall: Paywall?
   
   func setup(usingPaywall paywall: Paywall) {
-    
+    self.paywall = paywall
     setupMeta(withPaywall: paywall)
     setupPaywallVStack(withPaywall: paywall)
     
@@ -85,9 +86,29 @@ class PaywallView : UIView {
     button.clipsToBounds = true
     button.setTitle(component.title, for: .normal)
     button.titleLabel?.font = PaywallView.font(forComponent: component)
+    if let _ = component.alert {
+      button.addTarget(self, action:  #selector(buttonTapped(_:)), for: .touchUpInside)
+    }
     return button
   }
   
+  @objc private func buttonTapped(_ sender: UIButton) {
+    guard let paywall = paywall else {
+      Log.error(TAG, "nil paywall")
+      return
+    }
+
+    for component in paywall.components {
+      if component.title == sender.currentTitle {
+        if let alert = component.alert {
+          let alertController = UIAlertController(title: "", message: alert, preferredStyle: .alert)
+          alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+          self.window?.rootViewController?.present(alertController, animated: false)
+        }
+      }
+    }
+          
+  }
   
   private func addLabel(component: PaywallComponent) -> UIView? {
     let label = UILabel()

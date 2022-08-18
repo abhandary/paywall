@@ -23,7 +23,6 @@ final class PaywallViewModel {
   
   func fetchPaywall() {
     self.repo.fetchPaywall { [weak self] result in
-      Log.verbose(TAG, result)
       switch(result) {
       case .success(let paywall):
         DispatchQueue.main.async {

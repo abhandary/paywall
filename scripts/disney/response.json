@@ -48,6 +48,7 @@
       "bgColor": "#0A75CF",
       "height_proportion": 0.05,
       "padding": 20.0
+      "alert": "Purchase: (dplus_free_trial)"
     },
     {
       "type": "separator",
@@ -80,8 +81,9 @@
     },
     {
       "type": "button",
-      "title": "Login",
+      "title": "Log In",
       "color": "#C7C9CB",
+      "alert": "Log In"
     },
     {
       "type": "separator",

@@ -32,7 +32,6 @@ extension PaywallDataFetcher {
       }
       switch (result) {
       case .success(let data):
-        Log.verbose(TAG, String(data: data, encoding: .utf8) ?? "")
         if let paywall = self.decodePaywall(data: data) {
           completion(.success(paywall))
         } else {

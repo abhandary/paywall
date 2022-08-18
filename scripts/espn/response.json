@@ -1,3 +1,94 @@
 {
-  "TODO": "TODO"
+  "meta": {
+    "backgroundImage": "http://localhost:8000/images/espn.jpg",
+    "backgroundColor": "#000000"
+  },
+  "components": [
+    {
+      "type": "label",
+      "title": "Serving Fans. Anytime. Anywhere",
+      "color": "#F8F8FFFF",
+      "weight": "bold",
+      "size": 18.0,
+      "alignment": "center",
+      "padding": 20.0
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.05,
+      "width_proportion": 1.0
+    },
+    {
+      "type": "label",
+      "title": "All the Sports. All the Time. Thousands of events, exclusive original series, and more -- all in HD.",
+      "color": "#F8F8FFFF",
+      "weight": "normal",
+      "size": 17.0,
+      "alignment": "center",
+      "padding": 40.0
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.1,
+      "width_proportion": 1.0
+    },
+    {
+      "type": "label",
+      "title": "Already Have an ESPN+ Account?",
+      "color": "#F8F8FFFF",
+      "weight": "normal",
+      "size": 16.0,
+      "alignment": "center",
+      "padding": 20.0
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.005,
+      "width_proportion": 1.0
+    },
+    {
+      "type": "button",
+      "title": "Log In",
+      "color": "#fcba03",
+      "bgColor": "#fcba03",
+      "padding": 20.0,
+      "weight": "bold",
+      "size": 18.0,
+      "height_proportion": 0.06,
+      "alert": "Log In"
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.02,
+      "width_proportion": 1.0
+    },
+    {
+      "type": "button",
+      "title": "Start Your Free Trial",
+      "color": "#fcba03",
+      "bgColor": "#fcba03",
+      "padding": 20.0,
+      "weight": "bold",
+      "size": 18.0,
+      "height_proportion": 0.06,
+      "alert": "Purchase: (eplus_free_trial)"
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.005
+    },
+    {
+      "type": "label",
+      "title": "7-day free trial, then $5.99/month",
+      "color": "#F8F8FFFF",
+      "weight": "normal",
+      "size": 16.0,
+      "alignment": "center",
+      "padding": 20.0
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.08
+    },
+  ]
 }

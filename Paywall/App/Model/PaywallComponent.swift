@@ -22,4 +22,5 @@ struct PaywallComponent : Codable {
   let heightProportion: Float?
   let widthProportion: Float?
   let padding: Float?
+  let alert: String?
 }
