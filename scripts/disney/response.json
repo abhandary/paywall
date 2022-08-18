@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "backgroundImage": "http://localhost:8000/images/splash.png",
+    "backgroundColor": "#1A1D28FF"
+  },
+  "components": [
+    {
+      "type": "image",
+      "url": "http://localhost:8000/images/logo.png",
+      "aspect_ratio": 2.3,
+      "alignment": "center",
+      "padding": 50.0
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.02
+    },
+    {
+      "type": "label",
+      "title": "The best stories in all the world, all in one place.",
+      "color": "#F8F8FFFF",
+      "weight": "bold",
+      "size": 18.0,
+      "alignment": "center",
+      "padding": 40.0
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.02
+    },
+    {
+      "type": "image",
+      "url": "http://localhost:8000/images/brands.png",
+      "alignment": "center",
+      "aspect_ratio": 18.0,
+      "padding": 20.0
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.13
+    },
+    {
+      "type": "button",
+      "title": "SIGN UP NOW",
+      "color": "#ffffff",
+      "weight": "bold",
+      "size": 18.0,
+      "bgColor": "#0A75CF",
+      "height_proportion": 0.05,
+      "padding": 20.0
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.02
+    },
+    {
+      "type": "label",
+      "title": "Start streaming Disney+ with your 7 day free trial then only 6.99/month",
+      "color": "#77797f",
+      "weight": "normal",
+      "size": 16.0,
+      "alignment": "center",
+      "padding": 20.0
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.02,
+      "width_proportion": 1.0
+    },
+    {
+      "type": "separator",
+      "bgColor": "#F8F8FFFF",
+      "height_proportion": 0.002,
+      "width_proportion": 1.0
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.01,
+      "width_proportion": 1.0
+    },
+    {
+      "type": "button",
+      "title": "Login",
+      "color": "#C7C9CB",
+    },
+    {
+      "type": "separator",
+      "height_proportion": 0.05
+    },
+  ]
+}
