@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PaywallMeta : Codable {
+struct PaywallMeta : Codable, Equatable {
   let backgroundImage: String
   let backgroundColor: String
 }

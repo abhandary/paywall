@@ -11,7 +11,7 @@ import SwiftUI
 
 private let TAG = "PaywallViewController"
 
-class PaywallViewController: UIViewController {
+@MainActor class PaywallViewController: UIViewController {
 
   var cancellables: Set<AnyCancellable> = []
   let viewModel: PaywallViewModel
@@ -64,6 +64,8 @@ extension PaywallViewController {
   func showPaywallView(withPaywall paywall: Paywall) {
     self.loadingViewController.removeFromParent()
     self.loadingViewController.view.removeFromSuperview()
+    paywallView.removeFromSuperview()
+    paywallView = PaywallView()
     paywallView.setup(usingPaywall: paywall)
     self.view.addSubview(paywallView)
     paywallView.frame = self.view.frame

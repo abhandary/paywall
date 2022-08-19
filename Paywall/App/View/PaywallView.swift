@@ -11,7 +11,7 @@ import UIKit
 
 private let TAG = "PaywallView"
 
-class PaywallView : UIView {
+@MainActor class PaywallView : UIView {
   
   lazy var splashImage = UIImageView()
   lazy var vStack = UIStackView()

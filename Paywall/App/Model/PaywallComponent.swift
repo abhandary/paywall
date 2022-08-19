@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PaywallComponent : Codable {
+struct PaywallComponent : Codable, Equatable {
   let type: String
   let title: String?
   let color: String?

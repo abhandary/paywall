@@ -24,7 +24,7 @@ class AssetStore {
   
 //MARK: public methods
   
-  init(session: NetworkSessionProtocol = URLSession.shared) {
+  init(session: NetworkSessionProtocol = URLSession.paywall) {
     self.session = session
   }
   

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Paywall : Codable {
+struct Paywall : Codable, Equatable {
   let meta: PaywallMeta
   let components: [PaywallComponent]
 }
