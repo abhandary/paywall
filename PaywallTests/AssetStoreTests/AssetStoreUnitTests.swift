@@ -3,7 +3,6 @@
 //  PaywallTests
 //
 //  Created by Akshay Bhandary on 8/18/22.
-//  Copyright © 2022 Disney Streaming. All rights reserved.
 //
 
 import Foundation
