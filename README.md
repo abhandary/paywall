@@ -6,6 +6,14 @@ Check out the [prompt](PROMPT.md) to get started.
 
 ## README Questions:
 
+## XCode version used
+
+* 13.4.1
+
+## To run
+
+* run directly from XCode
+
 ## Assumptions in the code.
 * That the UI layout can be stacked vertically, the currently layout enginge works for simple vertically stacked layouts, but will not scale to more complex layouts that need a combination of horizontal and vertical stacks.
 
